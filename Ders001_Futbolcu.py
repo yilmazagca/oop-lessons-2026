@@ -5,12 +5,12 @@ Bu kurala göre, sınıf ismindeki her kelimenin ilk harfi
 büyük yazılır ve kelimeler arasına alt çizgi (_) gibi
 işaretler konmaz."""
 
-// Burada Futbolcu adında bir sınıf(class) tanımlıyoruz
+# Burada Futbolcu adında bir sınıf(class) tanımlıyoruz
 class Futbolcu:
     def __init__(self, isim, yas, mevki, guc):
-        // __init__ özel bir metodtur (magic / dunder (double underscore) methods
-        // sınıftan bir örnek alındığında otomatik tetiklenir Futbolcu.__init__ 'e gerek yoktur.
-        // istenirse yukarıda guc=80 gibi bir baslangıc degeri atanabilir
+        # __init__ özel bir metodtur (magic / dunder (double underscore) methods
+        # sınıftan bir örnek alındığında otomatik tetiklenir Futbolcu.__init__ 'e gerek yoktur.
+        # istenirse yukarıda guc=80 gibi bir baslangıc degeri atanabilir
                              
         self.isim = isim
         self.yas = yas
