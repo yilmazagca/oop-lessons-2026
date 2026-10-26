@@ -11,6 +11,7 @@ Bu depo, Python'da sınıf (class), nesne (object), constructor (`__init__`), me
 | Dosya | Konu | Açıklama |
 |-------|------|----------|
 | `Ders001_Futbolcu.py` | Sınıf ve Nesne Temelleri | `Futbolcu` sınıfı ile `__init__`, attribute ve metod kullanımı |
+| `Ders001-Ogrenci-Kayit.py` | Sınıf ve Nesne Kullanımı | Class kullanımı öğrenci kayıt programı başlangıç |
 | `Ders003_Dunder_Metods.py` | Dunder (Magic) Methods | `__str__` metodu ile nesnelerin anlamlı string temsilini oluşturma |
 
 ---
