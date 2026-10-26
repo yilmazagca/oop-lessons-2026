@@ -1,0 +1,59 @@
+"""
+------- Değişkenler -------
+adi
+soyadi
+tc_kimlik
+dogum_tarihi
+bolum
+okul
+ogrenci_no
+"""
+import os
+from rich.console import Console
+from rich.panel import Panel
+from rich import print as rprint
+
+
+class Ogrenci:
+    def __init__(self, adi, soyadi, tc_kimlik, dogum_tarihi, bolum, okul, ogrenci_no):
+        self.adi = adi
+        self.soyadi = soyadi
+        self.tc_kimlik = tc_kimlik
+        self.dogum_tarihi = dogum_tarihi
+        self.bolum = bolum
+        self.okul = okul
+        self.ogrenci_no = ogrenci_no
+
+    def bilgileri_goster(self):
+        # print("-" * 80)
+        print(f"Öğrencinin Adı: {self.adi}")
+        print(f"Öğrencinin Soyadı: {self.soyadi}")
+        # print("-" * 80)
+        print(f"Öğrencinin TC Kimlik Numarası: {self.tc_kimlik}")
+        print(f"Öğrencinin Doğum Tarihi: {self.dogum_tarihi}")
+        print(f"Öğrencinin Bölümü: {self.bolum}")
+        print(f"Öğrencinin Okulu: {self.okul}")
+        print(f"Öğrencinin Öğrenci Numarası: {self.ogrenci_no}")
+        # print("-" * 80)
+
+def ekran_temizle():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+# import subprocess
+# import platform
+
+# def ekran_temizle():
+#     komut = "cls" if platform.system() == "Windows" else "clear"
+#     subprocess.run(komut, shell=True)
+
+console = Console()
+
+ogrenci1 = Ogrenci("Ahmet", "Yılmaz", "11111111111", "01.01.2000", "Yönetim Bilişim Sistemleri", "Uygulamalı Bilimler Yüksekokulu", "251700001")
+
+ekran_temizle()
+console.rule("[bold blue]Öğrenci Bilgileri[/bold blue]")
+ogrenci1.bilgileri_goster()
+
+
+
