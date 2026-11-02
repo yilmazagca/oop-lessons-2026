@@ -15,14 +15,15 @@ def ana_program():
     
     # Tasarım dosyasını doğrudan pencere olarak yüklüyorsuz
     pencere = loader.load(ui_yolu)
-    .
+
     if not pencere:
         print("Tasarım dosyası yüklenemedi!")
         return
 
     # Pencereyi ekranda gösteriyoruz
     pencere.show()
-    
+
+
     sys.exit(app.exec())
 
 if __name__ == "__main__":
